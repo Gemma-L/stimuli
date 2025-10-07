@@ -53,85 +53,69 @@
       </div>
     </div>
 
-    <!-- Review panel (matches screenshot) -->
+    <!-- Review panel — layout per screenshot; text kept exactly as your code -->
 <div class="aw-panel" style="margin-top:16px; background:linear-gradient(180deg,#f6f9ff 0%, #eef4ff 100%); border:1px solid #e2e7ff; border-radius:16px; padding:20px;">
-  <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:flex-start;">
-    
-    <!-- Left: Review Summary badges -->
-    <div style="min-width:320px; flex:1 1 420px;">
-      <h4 style="margin:0 0 12px; font-size:20px; font-weight:800; color:#1f2937;">Review Summary</h4>
+  <div style="display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:flex-start;">
 
-      <!-- row 1 -->
-      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
-        <!-- small inline svg icon -->
+    <!-- Left column -->
+    <div style="min-width:320px; flex:1 1 420px;">
+      <h4 style="margin:0 0 10px; font-size:20px; font-weight:800; color:#1f2937;">Review Summary</h4>
+      <div style="display:flex; align-items:center; gap:10px;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="flex:0 0 auto">
           <path d="M6 10V8a6 6 0 1112 0v2h1a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1v-9a1 1 0 011-1h1zm2 0h8V8a4 4 0 10-8 0v2z" fill="#2563EB"/>
         </svg>
         <span style="font-weight:700; color:#2563EB; font-size:16px;">Human-written summary of customer reviews</span>
       </div>
+    </div>
 
-    <!-- Right: ratings title + 2x2 grid -->
-    <div style="flex:1 1 420px; min-width:360px;">
+    <!-- Right column -->
+    <div style="flex:1 1 460px; min-width:360px;">
       <div style="text-align:right; font-weight:800; color:#2563EB; margin-bottom:8px;">
-      human experts rated this product...
+        human experts rated this product...
       </div>
 
-      <div style="background:#eff3ff; border-radius:10px; padding:12px;">
-        <!-- 2 x 2 grid -->
-        <div style="display:grid; grid-template-columns: repeat(2, minmax(160px, 1fr)); gap:10px 18px;">
-          
+      <!-- light-blue rounded strip with 2x2 grid -->
+      <div style="background:#eff3ff; border-radius:12px; padding:14px 16px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; column-gap:28px; row-gap:10px;">
+
           <!-- Comfort -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
             <span style="color:#4b5563; font-size:14px;">Comfort</span>
-            <span aria-label="3 of 5" style="font-size:14px;">
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
+            <span aria-label="3 of 5" style="font-size:14px; white-space:nowrap;">
+              <span style="color:#f5b300">&#9733;&#9733;&#9733;</span><span style="color:#cbd5e1">&#9733;&#9733;</span>
             </span>
           </div>
 
           <!-- Size & Fit -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
             <span style="color:#4b5563; font-size:14px;">Size &amp; Fit</span>
-            <span aria-label="1 of 5" style="font-size:14px;">
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
+            <span aria-label="1 of 5" style="font-size:14px; white-space:nowrap;">
+              <span style="color:#f5b300">&#9733;</span><span style="color:#cbd5e1">&#9733;&#9733;&#9733;&#9733;</span>
             </span>
           </div>
 
           <!-- Durability -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
             <span style="color:#4b5563; font-size:14px;">Durability</span>
-            <span aria-label="1 of 5" style="font-size:14px;">
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
+            <span aria-label="1 of 5" style="font-size:14px; white-space:nowrap;">
+              <span style="color:#f5b300">&#9733;</span><span style="color:#cbd5e1">&#9733;&#9733;&#9733;&#9733;</span>
             </span>
           </div>
 
           <!-- Quality -->
-          <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="display:flex; align-items:center; justify-content:space-between;">
             <span style="color:#4b5563; font-size:14px;">Quality</span>
-            <span aria-label="2 of 5" style="font-size:14px;">
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#f5b300">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
-              <span style="color:#cbd5e1">&#9733;</span>
+            <span aria-label="2 of 5" style="font-size:14px; white-space:nowrap;">
+              <span style="color:#f5b300">&#9733;&#9733;</span><span style="color:#cbd5e1">&#9733;&#9733;&#9733;</span>
             </span>
           </div>
 
         </div>
       </div>
     </div>
+
   </div>
+</div>
 
   <!-- Summary note（保留原文，无需改动，可继续放下面的段落） -->
   <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; line-height:1.6; color:#334155; margin-top:16px;">
